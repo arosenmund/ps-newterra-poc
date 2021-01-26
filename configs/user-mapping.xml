@@ -1,0 +1,38 @@
+<user-mapping>
+    <!-- Per-user authentication and config information -->
+
+    <authorize
+
+         username="tstark"
+
+         password="privatize">
+
+
+       <connection name="default">
+
+         <protocol>ssh</protocol>
+
+         <param name="hostname">@var-ssh-console-1-internal-ip@</param>
+
+         <param name="port">22</param>
+
+         <param name="username">ubuntu</param>
+
+         <param name="password">@var-ssh-pki-private@</param>
+
+       </connection>
+
+       <connection name="Windows 2019">
+    
+         <protocol>rdp</protocol>
+         <param name="hostname">@var-rdp-console-1-int-ip@</param>
+         <param name="port">3389</param>
+         <param name="username">administrator</param>
+         <param name="password">@var-win-rdp-password@</param>
+
+    </authorize>
+
+
+
+</user-mapping>
+
