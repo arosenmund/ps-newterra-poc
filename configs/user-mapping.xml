@@ -5,8 +5,7 @@
 
          username="@guac_auth_username@"
 
-         password="@guac_auth_password">
-
+         password="@guac_auth_password@">
 
        <connection name="Ubuntu Console">
 
