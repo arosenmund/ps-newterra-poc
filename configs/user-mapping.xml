@@ -32,6 +32,8 @@
          <param name="username">Administrator</param>
          
          <param name="password">@win_rdp_password@</param>
+         
+       </connection>
       
     </authorize>
 
