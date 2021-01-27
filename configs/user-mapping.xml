@@ -3,36 +3,38 @@
 
     <authorize
 
-         username="tstark"
+         username="@guac_auth_username@"
 
-         password="privatize">
+         password="@guac_auth_password">
 
 
-       <connection name="default">
+       <connection name="Ubuntu Console">
 
          <protocol>ssh</protocol>
 
-         <param name="hostname">@var-ssh-console-1-internal-ip@</param>
+         <param name="hostname">@ssh_console_internal_ip@</param>
 
          <param name="port">22</param>
 
          <param name="username">ubuntu</param>
 
-         <param name="password">@var-ssh-pki-private@</param>
+         <param name="private-key">@ssh_pki_key@</param>
 
        </connection>
 
        <connection name="Windows 2019">
     
          <protocol>rdp</protocol>
-         <param name="hostname">@var-rdp-console-1-int-ip@</param>
+         
+         <param name="hostname">@win_rdp_internal_ip@</param>
+         
          <param name="port">3389</param>
-         <param name="username">administrator</param>
-         <param name="password">@var-win-rdp-password@</param>
+         
+         <param name="username">Administrator</param>
+         
+         <param name="password">@win_rdp_password@</param>
 
     </authorize>
-
-
 
 </user-mapping>
 
